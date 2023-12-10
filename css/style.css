@@ -1,15 +1,159 @@
 * {
   box-sizing: border-box;
-}
+  padding: 0;
+  margin: 0;
+  }
 
 body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  line-height: 1.5;
+  background-color: white;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1;
 }
 
-h1,
+.header{
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #a7a7a7;
+    color: #ffffff;
+ 
+}
+
+.header h1 {
+    display: inline-block;
+    font-size: 30px;
+}
+
+#id{
+  font-size: 5px;
+}
+
+#about{
+  font-size: 10px;
+  font-family:'Poppins', sans-serif;
+}
+
+.header nav {
+  padding-top: 5px;
+  margin-right: 50px;
+  float: right;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+}
+
+.header nav ul {
+  list-style-type: none;
+}
+
+.header nav ul li {
+  display: inline-block;
+  margin-left: 25px;
+}
+
+a{
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.hero-banner {
+    position: relative; /* Make the container relatively positioned */
+    height: 500px;
+    width: auto;
+    margin: 15px;
+    background-image: url("/Portfolio/images/show stopper m.jpg"); /* Corrected image path */
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+}
+
+#subHeading {
+    position: absolute; /* Position the text absolutely within the relative container */
+    bottom: 0; /* Align the text to the bottom of the container */
+    text-align: center;
+    width: auto;
+    background-color: rgba(255, 255, 255, 0.8); /* Optional: Add a background color with opacity */
+    padding: 10px; /* Optional: Add padding for better readability */
+}
+
+.page-wrapper h1{
+  font-size: 25px;
+  margin: 15px;
+}
+
+#about{
+  width: auto;
+  padding: 8px;
+  margin: 10px;
+  text-align: start;
+  background-color: #e4e4e4;
+  border-radius: 15px;
+}
+
+#work{
+  width: 250px;
+  padding: 8px;
+  margin: 10px;
+  text-align: start;
+  background-color: #e4e4e4;
+  border-radius: 15px;
+
+}
+
+#categoryGrid {
+  margin: 10px;
+  display: grid;
+  grid-template-rows: 300px 300px 300px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "Architectural Architectural Collective"
+    "Mountain Winter Winter";
+}
+
+#Architectural{
+  grid-area: Architectural;
+  background-image: url("/Portfolio/images/show stopper.jpg"); 
+}
+
+#Collective {
+  grid-area: Collective;
+  background-image: url("/Portfolio/images/Artboard 1.png");
+}
+
+#Mountain {
+  grid-area: Mountain;
+  background-image: url("/Portfolio/images/cliff house_1 - Day (3).jpg");
+   
+}
+
+#Winter {
+  grid-area: Winter;
+  background-image: url("/Portfolio/images/winter house_2 - Photo.jpg");
+   
+}
+
+.categoryGridArea {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+  cursor: pointer;
+  display: grid;
+  align-content:end;
+  border-radius: 15px;
+}
+
+.heading {
+    background-color: rgba(0,0,0,0.7);
+    padding: 15px;
+    height: 30px;
+    color: white;
+    font-size: 18px;
+    
+  }
+  
+
+
+
+h1
 h2,
 h3,
 h4,
